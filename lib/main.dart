@@ -53,17 +53,29 @@ class _AnaSayfaState extends State<AnaSayfa> {
               scrollDirection: Axis.horizontal,
               children: <Widget>[
                 listeElemani('assets/model1.jpeg', 'assets/chanellogo.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
                 listeElemani('assets/model2.jpeg', 'assets/louisvuitton.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
                 listeElemani('assets/model3.jpeg', 'assets/chloelogo.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
                 listeElemani('assets/model1.jpeg', 'assets/chanellogo.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
                 listeElemani('assets/model2.jpeg', 'assets/louisvuitton.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
                 listeElemani('assets/model3.jpeg', 'assets/chloelogo.jpg'),
-                SizedBox(width: 30,),
+                SizedBox(
+                  width: 30,
+                ),
               ],
             ),
           ),
@@ -74,18 +86,15 @@ class _AnaSayfaState extends State<AnaSayfa> {
             child: Material(
               borderRadius: BorderRadius.circular(16),
               elevation: 4,
-              color: Colors.blue.shade300,
+              //color: Colors.blue.shade300,
               child: Container(
-                height: 450,
+                height: 500,
                 width: double.infinity,
                 padding: EdgeInsets.all(16),
                 child: Column(
-
                   children: <Widget>[
-
                     Row(
                       children: <Widget>[
-
                         Container(
                           height: 50,
                           width: 50,
@@ -93,50 +102,188 @@ class _AnaSayfaState extends State<AnaSayfa> {
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: AssetImage('assets/model1.jpeg'),
-                                  fit: BoxFit.cover)
-                          ),
+                                  fit: BoxFit.cover)),
                         ),
-                        SizedBox(width: 10,),
-
+                        SizedBox(
+                          width: 10,
+                        ),
                         Container(
-                          width: MediaQuery
-                              .of(context)
-                              .size
-                              .width - 160,
+                          width: MediaQuery.of(context).size.width - 160,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text("Daisy", style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold),),
-                              SizedBox(height: 5,),
-                              Text('34 mins ago', style: TextStyle(
-                                  fontFamily: 'Montserrat', fontSize: 12,color: Colors.grey),)
+                              Text(
+                                "Daisy",
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                '34 mins ago',
+                                style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 12,
+                                    color: Colors.grey),
+                              )
                             ],
                           ),
-
                         ),
-                        SizedBox(width: 10,),
-                        Icon(Icons.more_vert, color: Colors.grey, size: 22,)
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(
+                          Icons.more_vert,
+                          color: Colors.grey,
+                          size: 22,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "This official website features a ribbed knit zipper jacket that is"
+                          "modern and stylish. It looks very temparament and is recommend to friends",
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontFamily: 'Montserrat',
+                          color: Colors.grey),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          height: 200,
+                          width: (MediaQuery.of(context).size.width - 50) / 2,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/modelgrid1.jpeg',
+                                ),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Container(
+                              height: 95,
+                              width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/modelgrid2.jpeg',
+                                    ),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                            SizedBox(height: 10,),
+                            Container(
+                              height: 95,
+                              width:
+                              (MediaQuery.of(context).size.width - 100) / 2,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/modelgrid3.jpeg',
+                                    ),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                          ],
+                        ),
+
+
+
+
 
                       ],
-
                     ),
+
+                    SizedBox(height: 10,),
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          height: 25,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.brown.withOpacity(0.2)
+                          ),
+                          child: Center(
+                            child: Text(
+                              "# Louis vuitton", style: TextStyle(
+                                fontFamily: 'Montserrat', fontSize: 10,color: Colors.brown
+                            ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10,),
+                        Container(
+                          height: 25,
+                          width: 75,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.brown.withOpacity(0.2)
+                          ),
+                          child: Center(
+                            child: Text(
+                              "# Chloe", style: TextStyle(
+                                fontFamily: 'Montserrat', fontSize: 10,color: Colors.brown
+                            ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    SizedBox(height: 20,),
+                    Divider(),
+                    SizedBox(height: 20,),
+                    Row(
+                      children: <Widget>[
+                        Icon(Icons.reply, color: Colors.brown.withOpacity(0.2), size: 30,),
+                        SizedBox(width: 10,),
+                        Text("1.7k", style: TextStyle(fontFamily: 'Montserrat', fontSize: 16),),
+                        SizedBox(width: 25,),
+                        Icon(Icons.comment, color: Colors.brown.withOpacity(0.2), size: 30,),
+                        SizedBox(width: 10,),
+                        Text("325", style: TextStyle(fontFamily: 'Montserrat', fontSize: 16),),
+
+                        Container(
+                          width: MediaQuery.of(context).size.width-235,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: <Widget>[
+                              Icon(Icons.favorite, color: Colors.red, size: 30,),
+                              SizedBox(width: 5,),
+                              Text("2.3k", style: TextStyle(fontFamily: 'Montserrat', fontSize: 16),),
+                            ],
+                          ),
+                        )
+
+                      ],
+                    )
+
 
 
                   ],
-
                 ),
-
-
               ),
-
-
             ),
           )
-
-
         ],
       ),
     );
@@ -171,25 +318,22 @@ class _AnaSayfaState extends State<AnaSayfa> {
             ),
           ],
         ),
-        SizedBox(height: 10,),
-
+        SizedBox(
+          height: 10,
+        ),
         Container(
           height: 30,
           width: 75,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Colors.brown
-          ),
+              borderRadius: BorderRadius.circular(15), color: Colors.brown),
           child: Center(
-            child: Text("Follow", style: TextStyle(
-                fontFamily: 'Montserrat',
-                fontSize: 14,
-                color: Colors.white
-            ),),
+            child: Text(
+              "Follow",
+              style: TextStyle(
+                  fontFamily: 'Montserrat', fontSize: 14, color: Colors.white),
+            ),
           ),
         )
-
-
       ],
     );
   }
